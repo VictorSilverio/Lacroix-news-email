@@ -32,15 +32,47 @@
       }
 
       @media screen and (max-width: 599.98px) {
-         .two-columns .padding {
-            padding-right: 0!important;
-            padding-left: 0!important;
-         }
-         img.two-col-img {
-            width: 300px!important;
-            max-width: 300px!important;
+         .column {
+            display: block !important;
+            text-align: center !important;
+      
          }
 
+         .padding  {
+            padding-top: 10px !important;
+            padding-left: 0px !important;
+         }
+
+
+         .logo {
+            padding-left: 50px !important; 
+         }
+         .social {
+            padding-left: 50px !important;
+         }
+
+         .trickortreat td {
+            text-align: center !important;
+         }
+
+         .sliderow td {
+            text-align: center !important;
+         }
+
+         .img-slide {
+            padding-left: 0px !important;
+         }
+         
+         .footer p {
+            display: block !important;
+         }
+
+         .footer a {
+            padding-left: 0px !important;
+            padding-top: 5px !important;
+            display: block !important;
+         }
+         
       }
       @media screen and (max-width: 399.98px) {
          img.three-col-img {
@@ -91,7 +123,7 @@ font-button/some p tags and titles: #05566D
    <![endif]-->
 
    <center style="width: 100%;table-layout:fixed;background-color: #50C8DB; padding-bottom: 40px;">
-      <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
+      <div style="max-width: 600px;background-color: #fafdfe;">
 
          <!-- Preheader (remove comment) -->
          <div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
@@ -111,27 +143,40 @@ font-button/some p tags and titles: #05566D
 <!-- START OF NAVIGATION ROW -->
             <tr>
               <td class="navigation" style="background-color: #50C8DB; padding: 30px 30px;">
-                <table width="100%" style="max-width: 540px; border-spacing: 0; font-size: 0; text-align: center;">
+                <table width="100%" style="border-spacing: 0; font-size: 0;">
                   <tr>
-                    <td class="two-columns" style="padding:0; font-size: 0; text-align: center;">
+                     <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
                         <!-- logo -->
-                        <table class="column"  align="left" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; " role="presentation">
+                         <!-- [if (gte mso 9) |(IE)]>
+                           <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="270" valign="top" style="padding: 0;">
+                        <![endif]-->
+                        <table class="column"  align="center" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                           <tr>
-                            <td class="logo" style="text-align: left;">
-                              <a class="logo-img" href="https://example.com" target="_blank"><img src="https://i.postimg.cc/8zP2Xz3y/logo.png" alt="intel logo"></a>
+                            <td class="logo" align="center" style="text-align: left;">
+                              <a class="logo-img" href="https://example.com" target="_blank"><img src="https://i.postimg.cc/8zP2Xz3y/logo.png" alt="intel logo" style="max-width: 100%;"></a>
                             </td>
                           </tr>
                         </table>
+                        <!-- [if (gte mso 9) |(IE)]>
+                           </td><td width="270" valign="top" style="padding: 0;">
+                        <![endif]-->
                         <!-- social -->
-                        <table class="column"  align="right" style="border-spacing: 0; width: 100%; max-width: 270px;" role="presentation">
+                        <table class="column"  align="center" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                           <tr>
-                            <td class="social" style="text-align: right; padding-top: 14px;">
+                            <td class="social" style=" padding-left: 110px; text-align: right; padding-top: 14px;">
                               <a href="https://example.com" target="_blank" style="padding: 0px 10px;"><img src="https://i.postimg.cc/VsXPdTnF/facebook.png" alt="facebook"></a>
                               <a href="https://example.com" target="_blank" style="padding: 0px 10px;"><img src="https://i.postimg.cc/hGNNGbGw/twitter.png" alt="twitter"></a>
                               <a href="https://example.com" target="_blank" style="padding: 0px 0px 0px 10px;"><img src="https://i.postimg.cc/vHMF9zvw/instagram.png" alt="instagram"></a>
                             </td>
                           </tr>
                         </table>
+                         <!-- [if (gte mso 9) |(IE)]>
+                           </td>
+                           </tr>
+                           </table>
+                        <![endif]-->
                     </td>
                   </tr>
                 </table>
@@ -189,9 +234,9 @@ font-button/some p tags and titles: #05566D
                         <!-- [if (gte mso 9) |(IE)]>
                            <table width="100%" style="border-spacing:0;" role="presentation">
                               <tr>
-                              <td width="300" valign="top" style="padding: 0;">
+                              <td width="270" valign="top" style="padding: 0;">
                         <![endif]-->
-                        <table class="column" align="left"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding">
                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -205,12 +250,12 @@ font-button/some p tags and titles: #05566D
                            </tr>
                         </table>
                         <!-- [if (gte mso 9) |(IE)]>
-                           </td><td width="300" valign="top" style="padding: 0;">
+                           </td><td width="270" valign="top" style="padding: 0;">
                         <![endif]-->
                         <!-- end of left product -->
 
                         <!-- right poll-->
-                        <table class="column"  align="right" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column"  align="center" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding" style="padding-left: 25px;">
                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -248,7 +293,7 @@ font-button/some p tags and titles: #05566D
 
 <!-- START OF TRICK ROW -->
             <tr>
-               <td style="padding: 30px; background-color: #0C7A9A;">
+               <td class="trickortreat" style="padding: 30px; background-color: #0C7A9A;">
                <table width="100%" style="border-spacing:0;" role="presentation">
                   <tr>
                      <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
@@ -261,7 +306,7 @@ font-button/some p tags and titles: #05566D
                         <![endif]-->
 
                         <!-- left -->
-                        <table class="column" align="left"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding">
                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -284,12 +329,12 @@ font-button/some p tags and titles: #05566D
                            </tr>
                         </table>
                         <!-- [if (gte mso 9) |(IE)]>
-                           </td><td width="300" valign="top" style="padding: 0;">
+                           </td><td width="270" valign="top" style="padding: 0;">
                         <![endif]-->
                         <!-- end of left product -->
 
                         <!-- right-->
-                        <table class="column"  align="right" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column"  align="center" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding">
                                  <table class="content" style="border-spacing: 0; text-align: center;" role="presentation"> 
@@ -334,10 +379,10 @@ font-button/some p tags and titles: #05566D
                         <![endif]-->
 
                         <!-- left -->
-                        <table class="column" align="left"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding">
-                                 <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
+                                 <table class="content" style="border-spacing: 0; text-align: center;" role="presentation"> 
                                     <tr>
                                        <td>
                                           <img src="https://i.postimg.cc/xTGJM0M6/headline1.png" alt="avatar">
@@ -354,26 +399,27 @@ font-button/some p tags and titles: #05566D
                            </tr>
                         </table>
                         <!-- [if (gte mso 9) |(IE)]>
-                           </td><td width="300" valign="top" style="padding: 0;">
+                           </td><td width="270" valign="top" style="padding: 0;">
                         <![endif]-->
                         <!-- end of left product -->
 
                         <!-- right-->
-                        <table class="column"  align="right" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding">
                                  <table class="content" style="border-spacing: 0; text-align: center;" role="presentation"> 
                                     <tr>
                                        <td>
-                                          <img src="https://i.postimg.cc/K8ZK5d5x/headline2.png" alt="retail store">
+                                          <img src="https://i.postimg.cc/K8ZK5d5x/headline2.png" alt="avatar">
+                                       </td>
+                                    </tr>
+                                    <!-- description -->
+                                    <tr>
+                                       <td class="description" style="text-align: center;">
+                                          <p style="color: #05566D;">Coty Tries Story Boutique to Show Mass Retailers What's Possible</p>
                                        </td>
                                     </tr>
                                  </table>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td class="description" style="text-align: center;">
-                                 <p style="color: #05566D;">Cool or creepy? Brands love the new iPhone facial recognition fotware</p>
                               </td>
                            </tr>
                         </table>
@@ -391,7 +437,7 @@ font-button/some p tags and titles: #05566D
 
 <!-- START OF SLIDE ROW -->
             <tr>
-               <td style="padding: 30px; background-color: #50C8DB;">
+               <td class="sliderow" style="padding: 30px; background-color: #50C8DB;">
                <table width="100%" style="border-spacing:0;" role="presentation">
                   <tr>
                      <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
@@ -404,7 +450,7 @@ font-button/some p tags and titles: #05566D
                         <![endif]-->
 
                         <!-- left -->
-                        <table class="column" align="left"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding">
                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -426,17 +472,17 @@ font-button/some p tags and titles: #05566D
                            </tr>
                         </table>
                         <!-- [if (gte mso 9) |(IE)]>
-                           </td><td width="300" valign="top" style="padding: 0;">
+                           </td><td width="270" valign="top" style="padding: 0;">
                         <![endif]-->
                         <!-- end of left product -->
 
                         <!-- right-->
-                        <table class="column"  align="right" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
+                        <table class="column"  align="center" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 270px; display:inline-block;" role="presentation">
                            <tr>
                               <td class="padding">
                                  <table class="content" style="border-spacing: 0; text-align: center;" role="presentation"> 
                                     <tr>
-                                       <td style="padding-left: 20px;">
+                                       <td class="img-slide" style="padding-left: 20px;">
                                           <img class="fimg" src="https://i.postimg.cc/J4qwQkTD/footer.png" alt="halloween">
                                        </td>
                                     </tr>
@@ -458,20 +504,12 @@ font-button/some p tags and titles: #05566D
 
 <!-- START OF FOOTER ROW -->
             <tr>
-               <td class="navigation" style="background-color: #FFFFFF; padding: 15px 30px;">
+               <td class="footer" style="background-color: #FFFFFF; padding: 15px 30px;">
                <table width="100%" style="max-width: 540px; border-spacing: 0; font-size: 0; text-align: center;">
                   <tr>
-                     <td class="two-columns" style="padding:0; font-size: 0; text-align: center;">
-                        <!-- logo -->
-                        <table class="column"  align="left" style="border-spacing: 0; vertical-align: top; width: 100%;" role="presentation">
-                           <tr>
-                           <td class="copyright" style="Margin: 0; text-align: left;">
-                              <p style="Margin: 0; font-size: 12px; color: #05566D; display: inline-block; font-weight: 500;">&copy; Nebo Agency, LLC 2022. 1000 Marietta St NW, Suite 270, Atlanta, GA 30318</p>
-                              <a href="https://example.com" target="_blank" style="color: #05566D; display: inline-block;font-size: 12px; padding-left: 60px;font-weight: 900;">Unsubscribe</a>
-                           </td>
-                           </tr>
-                        </table>
-
+                     <td>
+                        <p style="Margin:0; color: #05566D; font-size: 11px; display: inline-block;">&copy; Nebo Agency, LLC 2022. 1000 Marietta St NW, Suite 270, Atlanta, GA 30318</p>
+                        <a href="https://example.com"  style="padding-left: 50px; Margin:0; color: #05566D; font-size: 11px; font-weight: 900;display: inline-block;">Unsubscribe</a>
                      </td>
                   </tr>
                </table>
